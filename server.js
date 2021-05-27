@@ -12,7 +12,9 @@ const port = 3000;
 app.get("/", (request, response) => {
   response.send("Hello World!");
 });
+
 app.post("/", gcd_api.gcd_api);
+
 app.listen(port, () => {
   console.log(`http://localhost:${port}`);
 });
