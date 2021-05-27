@@ -2,6 +2,7 @@ const gcd = require("./function");
 
 const gcd_api =(request, response)=>{
   let check = Object.keys(request.body);
+  ///check request.body
   if (check.indexOf("numbers") < 0) {
     response.status(400).json({ error: "missing body" });
   }
